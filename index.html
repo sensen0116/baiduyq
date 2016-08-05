@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度舆情作业</title>
+  <link href="http://cdn.bootcss.com/fullPage.js/2.8.2/jquery.fullPage.css" rel="stylesheet">
+<!-- 	<link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" href="css/header.css">
+	<script src='js/jquery.js'></script>
+	<script src='js/bootstrap.js'></script>
+  <script src="http://cdn.bootcss.com/fullPage.js/2.8.2/jquery.fullPage.js"></script>
+  <script>
+$(function(){
+  $('#main').fullpage({
+    navigation:true,
+    navigationTooltips:['登录百度舆情','领先：数据收集与处理','全面：舆情分析逻辑与架构','专业：专业数据可视化'],
+    onLeave:function(three,four,down){
+      $('.denglu').css({
+        display:'block',
+      })
+    }
+
+    // onLeave:function(second,first,up){
+    //   $('.denglu').css({
+    //     display:'none',
+    //   })
+    // }
+
+  });
+  // var feiji=function(){
+
+  // }
+  // $('.feiji').addClass('feiji1').delay(1000)
+  // .animate({
+  //   top:35,
+  // })
+  $('.box').on('mouseover',function(){
+    $('.box1').css({
+      display:'block',
+    })
+  })
+
+    $('.box').on('mouseout',function(){
+    $('.box1').css({
+      display:'none',
+    
+    })
+  })
+  // $('.second').hasClass('active')
+
+  //   $('.denglu').css({
+  //     display:'block',
+  //   })
+  
+
+})
+</script>
+
+</head>        
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <div class="logo">
+            <img src="images/header1.png" alt="">
+      </div>
+      <div class="daohang1">
+       
+          <li>首页</li>
+          <li>产品介绍</li>
+          <li>用户版</li>
+     
+      </div>
+      <div class="daohang2">
+           <li class='denglu'>登录</li>
+          <li class='box'>手机客户端
+            <div class="hot"></div>
+            <div class="box1">
+              <div class="box2"></div>
+              <div class="box3">
+                <div class="box4">扫码下载</div>
+                <img src="images/anzhuo.jpg" alt="" class="anzhuo">
+                <img src="images/anzhuo.jpg" alt="" class="ios">
+                <div class="anzhuo1">安卓</div>
+                <div class="ios1">ios</div>
+              </div>
+            </div>
+          </li>
+          <li>百度司南</li>
+          <li>联系我们</li>
+          <li class='ask'>申请使用</li>
+   
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    下一页
+  </div>
+<div id="main">
+  <div class="section first">
+    <div class="login">
+
+      <div class="user">
+        <img src="images/user.jpg" alt="">
+        <input type="text" id='user1'>
+      </div>
+      <div class="mima">
+        <img src="images/mima.jpg" alt="">
+        <input type="text" id='mima1'>
+      </div>
+      <div class="yzm">
+        <input type="text" id='yzm1'>
+      </div>
+      <div class="yzm2"></div>
+      <div class="yzm3">换一张</div>
+      <div class="dl">登录</div>
+      <div class="anquan">安全控件常见问题</div>
+      <div class="wjmm">忘记密码</div>
+      </div>
+      
+    
+
+   
+
+   <img src="images/one1.png" alt="" class='img1'>
+   <div class="feiji "></div>
+   <img src="images/ship_1ad6734.png" alt="" class='chuan'>
+   <img src="images/hill_1_0d79217.png" alt="" class="img2">
+   <img src="images/hill_2_540422f.png" alt="" class="img3">
+   <img src="images/hill_3_ace39fb.png" alt="" class="img4">
+
+  </div>
+  <div class="section second">
+    <div class="second-box">
+         <img src="images/h_lingxian_221f2d8.png" alt="" class="lingxian">
+         <h4>数据收集与处理</h4>
+         <p>15年专业数据收集与语义分析技术积累</p>
+          <div class="yanxu">卓越极致，不断攀登</div>
+    </div>
+  <img src="images/brain_36a156f.png" alt="" class="img5">
+  <div class="square1"></div>
+  <div class="square2"></div>
+  <div class="square3"></div>
+  <div class="square4"></div>
+  <div class="square5"></div>
+
+  </div>
+  <div class="section three">
+     <div class="second-box">
+         <img src="images/h_quanmian_8f813d2.png" alt="" class="lingxian">
+         <h4>舆情分析逻辑与架构</h4>
+         <p>声量诊断、传播分析、情感提炼、受众画像</p>
+          <div class="yanxu">有方法论，更有智慧</div>
+    </div>
+  <img src="images/allside_e8abd12.png" alt="" class="img5">
+  <img src="images/bg-3-head_b8a3f7f.png" alt="" class="img6">
+
+  </div>
+  <div class="section four">
+    <div class="second-box">
+         <img src="images/h_zhuanye_256a94d.png" alt="" class="lingxian">
+         <h4>专业数据可视化
+
+
+</h4>
+         <p>非凡的数据洞悉和可视化能力</p>
+          <div class="yanxu">精研数据，惊艳所见</div>
+    </div>
+  <img src="images/stat_8934528.png" alt="" class="img7">
+  <p class='dibu'>© 2014 Baidu<a href="">使用百度前必读</a></p>
+  </div>
+</div>
+</body>
+</html>
